@@ -52,7 +52,7 @@ text, tspan {white-space: pre;}
 <!-- Right-side info with pinned value columns -->
 <text x="600" y="40" fill="#24292f">
   <!-- Title -->
-  <tspan x="600" y="40">sh4hmeer@github</tspan> ——————————————————————————————————————————————
+  <tspan x="600" y="40">sh4hmeer@github</tspan> ———————————————————————————————————————————————————————————————————
 
   <!-- Column for values -->
   <!-- value start column -->
