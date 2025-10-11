@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1350px" height="600px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1420px" height="660px" font-size="16px">
 <style>
 @font-face {
   src: local('Consolas'), local('Consolas Bold');
@@ -16,10 +16,10 @@
 text, tspan {white-space: pre;}
 </style>
 
-<rect width="1380px" height="660px" fill="#f6f8fa" rx="15"/>
+<rect width="1420px" height="660px" fill="#f6f8fa" rx="15"/>
 
-<!-- ASCII art -->
-<text x="20" y="40" fill="#24292f" class="ascii">
+<!-- ASCII art (unchanged) -->
+<text x="20" y="40" fill="#24292f">
 <tspan x="20" y="40">==================+===+++*#%%%%%###++++=====================</tspan>
 <tspan x="20" y="60">==============+==++#**###%%%@%@@%@%@##*+====================</tspan>
 <tspan x="20" y="80">==============++*#%%@@@@@@@@@@@@@@@@@%%*=+*=================</tspan>
@@ -49,28 +49,75 @@ text, tspan {white-space: pre;}
 <tspan x="20" y="560">----------------=*#%@@=****+++**********##@@@@@@@@@@@%+----+</tspan>
 </text>
 
-<!-- Right-side info -->
-<text x="580" y="40" fill="#24292f">
-<tspan x="580" y="40">sh4hmeer@github</tspan> ——————————————————————————————————————————————
-<tspan x="580" y="60" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> .................. </tspan><tspan class="value">Windows 11, Ubuntu 24.04</tspan>
-<tspan x="580" y="80" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">22 years, 9 months</tspan>
-<tspan x="580" y="100" class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">MHI Canada Aerospace</tspan>
-<tspan x="580" y="120" class="cc">. </tspan><tspan class="key">Kernel</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">Software Engineering</tspan>
-<tspan x="580" y="140" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">VS Code, IntelliJ IDEA</tspan>
-<tspan x="580" y="160" class="cc">. </tspan>
-<tspan x="580" y="180" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:<tspan class="cc"> ..... </tspan><tspan class="value">Java, JavaScript, TypeScript, HTML, CSS</tspan>
-<tspan x="580" y="200" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Computer</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">React, Node.js, Gradle, Payload CMS, MongoDB</tspan>
-<tspan x="580" y="220" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Real</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">English, French, Urdu</tspan>
-<tspan x="580" y="240" class="cc">. </tspan>
-<tspan x="580" y="260" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Software</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">Building AI tools, Web Design</tspan>
-<tspan x="580" y="280" class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Hardware</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">PC Optimization, Tech Setup</tspan>
-<tspan x="580" y="320">- Contact</tspan> ——————————————————————————————————————————————
-<tspan x="580" y="340" class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">University</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">shahmeer@uoguelph.ca</tspan>
-<tspan x="580" y="360" class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Personal</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">shahmeer_shahid@outlook.com</tspan>
-<tspan x="580" y="380" class="cc">. </tspan><tspan class="key">LinkedIn</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">linkedin.com/in/shahmeer-shahid</tspan>
-<tspan x="580" y="420">- GitHub Stats</tspan> ————————————————————————————————————————————
-<tspan x="580" y="440" class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">45</tspan> | <tspan class="key">Commits</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">1,230</tspan>
-<tspan x="580" y="460" class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc"> ............ </tspan><tspan class="value">62</tspan> | <tspan class="key">Lines of Code</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">128,500+</tspan>
+<!-- Right-side info with pinned value columns -->
+<text x="600" y="40" fill="#24292f">
+  <!-- Title -->
+  <tspan x="600" y="40">sh4hmeer@github</tspan> ——————————————————————————————————————————————
+
+  <!-- Column for values -->
+  <!-- value start column -->
+  <!-- use the same x for every .value tspan -->
+  <!-- OS -->
+  <tspan x="600" y="60" class="key">OS</tspan>:<tspan class="cc"> ............................ </tspan>
+  <tspan x="960" y="60" class="value">Windows 11, Ubuntu 24.04</tspan>
+
+  <!-- Uptime -->
+  <tspan x="600" y="80" class="key">Uptime</tspan>:<tspan class="cc"> ......................... </tspan>
+  <tspan x="960" y="80" class="value">22 years, 9 months</tspan>
+
+  <!-- Host -->
+  <tspan x="600" y="100" class="key">Host</tspan>:<tspan class="cc"> .............................. </tspan>
+  <tspan x="960" y="100" class="value">MHI Canada Aerospace</tspan>
+
+  <!-- Kernel -->
+  <tspan x="600" y="120" class="key">Kernel</tspan>:<tspan class="cc"> ........................... </tspan>
+  <tspan x="960" y="120" class="value">Software Engineering</tspan>
+
+  <!-- IDE -->
+  <tspan x="600" y="140" class="key">IDE</tspan>:<tspan class="cc"> ............................... </tspan>
+  <tspan x="960" y="140" class="value">VS Code, IntelliJ IDEA</tspan>
+
+  <!-- Languages -->
+  <tspan x="600" y="180" class="key">Languages.Programming</tspan>:<tspan class="cc"> ...... </tspan>
+  <tspan x="960" y="180" class="value">Java, JavaScript, TypeScript, HTML, CSS</tspan>
+
+  <tspan x="600" y="200" class="key">Languages.Computer</tspan>:<tspan class="cc"> ............. </tspan>
+  <tspan x="960" y="200" class="value">React, Node.js, Gradle, Payload CMS, MongoDB</tspan>
+
+  <tspan x="600" y="220" class="key">Languages.Real</tspan>:<tspan class="cc"> ......................... </tspan>
+  <tspan x="960" y="220" class="value">English, French, Urdu</tspan>
+
+  <!-- Hobbies -->
+  <tspan x="600" y="260" class="key">Hobbies.Software</tspan>:<tspan class="cc"> ............... </tspan>
+  <tspan x="960" y="260" class="value">Building AI tools, Web Design</tspan>
+
+  <tspan x="600" y="280" class="key">Hobbies.Hardware</tspan>:<tspan class="cc"> .............. </tspan>
+  <tspan x="960" y="280" class="value">PC Optimization, Tech Setup</tspan>
+
+  <!-- Contact -->
+  <tspan x="600" y="320">- Contact</tspan> ——————————————————————————————————————————————
+  <tspan x="600" y="340" class="key">Email.University</tspan>:<tspan class="cc"> ............... </tspan>
+  <tspan x="960" y="340" class="value">shahmeer@uoguelph.ca</tspan>
+
+  <tspan x="600" y="360" class="key">Email.Personal</tspan>:<tspan class="cc"> ................ </tspan>
+  <tspan x="960" y="360" class="value">shahmeer_shahid@outlook.com</tspan>
+
+  <tspan x="600" y="380" class="key">LinkedIn</tspan>:<tspan class="cc"> .......................... </tspan>
+  <tspan x="960" y="380" class="value">linkedin.com/in/shahmeer-shahid</tspan>
+
+  <!-- GitHub Stats -->
+  <tspan x="600" y="420">- GitHub Stats</tspan> ————————————————————————————————————————————
+  <tspan x="600" y="440" class="key">Repos</tspan>:<tspan class="cc"> .......................... </tspan>
+  <tspan x="960" y="440" class="value">45</tspan>
+
+  <tspan x="1110" y="440" class="key">| Commits</tspan>:<tspan class="cc"> ................ </tspan>
+  <tspan x="1320" y="440" class="value">1,230</tspan>
+
+  <tspan x="600" y="460" class="key">Followers</tspan>:<tspan class="cc"> ..................... </tspan>
+  <tspan x="960" y="460" class="value">62</tspan>
+
+  <tspan x="1110" y="460" class="key">| Lines of Code</tspan>:<tspan class="cc"> .......... </tspan>
+  <tspan x="1320" y="460" class="value">128,500+</tspan>
 </text>
 
 </svg>
