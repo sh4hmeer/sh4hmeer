@@ -79,7 +79,7 @@ text, tspan {white-space: pre;}
 
   <!-- Languages -->
   <tspan x="600" y="180" class="key">Languages.Programming</tspan>:<tspan class="cc"> ...... </tspan>
-  <tspan x="960" y="180" class="value">Java, JavaScript, TypeScript, HTML, CSS</tspan>
+  <tspan x="960" y="180" class="value">Python, JavaScript, TypeScript, HTML, CSS</tspan>
 
   <tspan x="600" y="200" class="key">Languages.Computer</tspan>:<tspan class="cc"> ............. </tspan>
   <tspan x="960" y="200" class="value">React, Node.js, Gradle, Payload CMS, MongoDB</tspan>
@@ -114,7 +114,7 @@ text, tspan {white-space: pre;}
   <tspan x="1320" y="440" class="value">1,230</tspan>
 
   <tspan x="600" y="460" class="key">Followers</tspan>:<tspan class="cc"> ..................... </tspan>
-  <tspan x="960" y="460" class="value">2</tspan>
+  <tspan x="960" y="460" class="value">4</tspan>
 
   <tspan x="1110" y="460" class="key">| Lines of Code</tspan>:<tspan class="cc"> .......... </tspan>
   <tspan x="1320" y="460" class="value">18,500+</tspan>
